@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    background: linear-gradient(145deg, #2b3a4d 0%, #1d2a36 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #eef2f5;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+button {
+    background-color: #4f7aa6;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 36px;
+    margin: 20px 0;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #2a4055, 0 6px 12px rgba(0,0,0,0.4);
+    transition: all 0.08s ease;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #5e8bbd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #2a4055, 0 10px 18px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #2a4055, 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.grid-container {
+    width: 960px;
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dadfea;
+    border-radius: 12px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6), inset 0 0 8px #ffffff50;
+    overflow: hidden;          /* keeps child corners rounded */
+}
+
+.grid-square {
+    border: 1px solid rgba(120, 130, 150, 0.25); /* subtle grid lines */
+    background-color: #eef2f7; /* default light background */
+    transition: background-color 0.03s ease; /* smooth darkening */
+    box-sizing: border-box;
+}
